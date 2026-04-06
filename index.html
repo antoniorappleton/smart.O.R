@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Smart O.R. - Gestão de Bloco Operatório</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+          tailwind.config = {
+            darkMode: "class",
+            theme: {
+              extend: {
+                "colors": {
+                        "tertiary-fixed-dim": "#ffb694",
+                        "on-primary-container": "#bbd0ff",
+                        "secondary-fixed": "#d9e3f4",
+                        "on-secondary-container": "#5b6573",
+                        "on-tertiary-container": "#ffc2a7",
+                        "on-surface": "#191c1d",
+                        "primary-container": "#0056b3",
+                        "surface-container-low": "#f3f4f5",
+                        "tertiary": "#722b00",
+                        "surface": "#f8f9fa",
+                        "on-secondary-fixed-variant": "#3e4855",
+                        "on-tertiary-fixed": "#351000",
+                        "tertiary-fixed": "#ffdbcc",
+                        "secondary-fixed-dim": "#bdc7d7",
+                        "primary": "#003f87",
+                        "on-primary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#004491",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c2c6d4",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container": "#edeeef",
+                        "surface-tint": "#115cb9",
+                        "surface-container-highest": "#e1e3e4",
+                        "inverse-surface": "#2e3132",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#001a40",
+                        "secondary": "#555f6d",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#acc7ff",
+                        "tertiary-container": "#983c00",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-dim": "#d9dadb",
+                        "on-secondary-fixed": "#121c28",
+                        "inverse-primary": "#acc7ff",
+                        "on-tertiary-fixed-variant": "#7b2f00",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#d7e2ff",
+                        "surface-variant": "#e1e3e4",
+                        "outline": "#727784",
+                        "background": "#f8f9fa",
+                        "on-background": "#191c1d",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-surface-variant": "#424752",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#d9e3f4"
+                },
+                "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                },
+                "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                }
+              },
+            },
+          }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { 
+            font-family: 'Inter', sans-serif;
+            min-height: max(884px, 100dvh);
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #003f87 0%, #0056b3 100%);
+        }
+    </style>
+    <link rel="manifest" href="public/manifest.json">
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+    <div id="header"></div>
+    <div id="content" class="min-h-screen"></div>
+    <div id="navbar"></div>
+    
+    <script type="module" src="src/app.js"></script>
+</body>
+</html>
