@@ -18,9 +18,14 @@ export function renderLogin() {
                     <label class="block text-[11px] font-bold uppercase tracking-widest text-outline mb-2 ml-1">Email</label>
                     <input type="email" id="email" value="sofiaappleton@gmail.com" class="w-full px-5 py-4 bg-surface-container-low border-none rounded-2xl focus:ring-2 focus:ring-primary transition-all font-medium" placeholder="nome@hospital.pt" required>
                 </div>
-                <div>
+                <div class="relative">
                     <label class="block text-[11px] font-bold uppercase tracking-widest text-outline mb-2 ml-1">Palavra-passe</label>
-                    <input type="password" id="password" value="ADOROestaVIDA" class="w-full px-5 py-4 bg-surface-container-low border-none rounded-2xl focus:ring-2 focus:ring-primary transition-all font-medium" placeholder="••••••••" required>
+                    <div class="relative">
+                        <input type="password" id="password" value="ADOROestaVIDA" class="w-full px-5 py-4 bg-surface-container-low border-none rounded-2xl focus:ring-2 focus:ring-primary transition-all font-medium pr-14" placeholder="••••••••" required>
+                        <button type="button" id="togglePassword" class="absolute right-4 top-1/2 -translate-y-1/2 text-outline hover:text-primary transition-colors">
+                            <span class="material-symbols-outlined" id="eyeIcon">visibility</span>
+                        </button>
+                    </div>
                 </div>
 
                 <div id="loginError" class="hidden text-error text-xs font-bold text-center mt-2 px-2 bg-error-container/20 py-2 rounded-lg">
@@ -41,6 +46,18 @@ export function renderLogin() {
 
 export function handleLogin() {
     const form = document.getElementById('loginForm');
+    const passwordInput = document.getElementById('password');
+    const toggleBtn = document.getElementById('togglePassword');
+    const eyeIcon = document.getElementById('eyeIcon');
+
+    if (toggleBtn && passwordInput) {
+        toggleBtn.onclick = () => {
+            const isPassword = passwordInput.getAttribute('type') === 'password';
+            passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
+            eyeIcon.innerText = isPassword ? 'visibility_off' : 'visibility';
+        };
+    }
+
     if (!form) return;
 
     form.onsubmit = (e) => {
