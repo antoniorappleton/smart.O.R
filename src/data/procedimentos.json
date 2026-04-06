@@ -1,0 +1,8 @@
+[
+  {
+    "id": "ARTRO-01",
+    "nome": "Artroscopia",
+    "tempo_estimado": 90,
+    "material_necessario": ["Trolley Endoscópico", "Soro"]
+  }
+]

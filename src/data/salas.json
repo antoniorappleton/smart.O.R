@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "nome": "Sala 1",
+    "especialidades": ["Endoscopia", "Geral"],
+    "equipamento": ["Trolley Endoscópico"],
+    "horario": { "inicio": "08:00", "fim": "20:00" }
+  },
+  {
+    "id": 2,
+    "nome": "Sala 2",
+    "especialidades": ["Ortopedia"],
+    "equipamento": ["Instrumentação"],
+    "horario": { "inicio": "08:00", "fim": "20:00" }
+  }
+]

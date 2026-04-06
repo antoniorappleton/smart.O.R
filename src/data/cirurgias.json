@@ -1,0 +1,10 @@
+[
+  {
+    "id": "SURG-2026-001",
+    "paciente": "João Silva",
+    "procedimento": "ARTRO-01",
+    "prioridade": "Eletiva",
+    "tipo": "Ambulatório",
+    "lateralidade": "Direito"
+  }
+]
