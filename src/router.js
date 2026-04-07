@@ -11,7 +11,7 @@ const routes = {
     'login': { render: renderLogin, handle: handleLogin },
     'dashboard': { render: renderDashboard },
     'schedule': { render: renderSchedule },
-    'staff': { render: renderStaff },
+    'staff': { render: renderStaff, handle: () => import('./screens/staff.js').then(m => m.handleStaff()) },
     'room-detail': { render: renderRoomDetail },
     'surgeries': { render: renderSurgeries, handle: handleSurgeries }
 };
@@ -91,7 +91,7 @@ function attachEventListeners() {
 
     // Room Details (Dashboard)
     document.querySelectorAll('button').forEach(btn => {
-        if (btn.innerText.includes('View Details') || btn.innerText.includes('Details')) {
+        if (btn.innerText.includes('Ver Detalhes') || btn.innerText.includes('Detalhes')) {
             btn.onclick = () => navigateTo('room-detail');
         }
     });

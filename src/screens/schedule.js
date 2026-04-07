@@ -3,12 +3,12 @@ export function renderSchedule() {
     return `
     <main class="pt-24 pb-32 px-6 max-w-3xl mx-auto">
         <div class="mb-10">
-            <h2 class="text-3xl font-extrabold tracking-tight text-on-surface mb-2">Surgical Schedule</h2>
+            <h2 class="text-3xl font-extrabold tracking-tight text-on-surface mb-2">Agenda Cirúrgica</h2>
             <div class="flex items-center gap-2 text-secondary font-label text-sm font-medium">
                 <span class="material-symbols-outlined text-base">calendar_today</span>
-                <span>Thursday, October 24</span>
+                <span>Quinta-feira, 24 de Outubro</span>
                 <span class="mx-2 text-outline-variant">•</span>
-                <span>8 Procedures Scheduled</span>
+                <span>8 Procedimentos Agendados</span>
             </div>
         </div>
 
@@ -27,8 +27,8 @@ export function renderSchedule() {
                     <div class="flex flex-wrap justify-between items-start gap-4 mb-4">
                         <div>
                             <div class="flex items-center gap-2 mb-1">
-                                <span class="px-2 py-0.5 rounded bg-error text-on-error text-[10px] font-bold uppercase tracking-wider">Urgent</span>
-                                <span class="text-primary font-bold text-sm tracking-tight">OR 04</span>
+                                <span class="px-2 py-0.5 rounded bg-error text-on-error text-[10px] font-bold uppercase tracking-wider">Urgente</span>
+                                <span class="text-primary font-bold text-sm tracking-tight">SALA 04</span>
                             </div>
                             <h3 class="text-xl font-bold text-on-surface leading-tight">Aponeurectomia Radical</h3>
                         </div>
@@ -39,15 +39,15 @@ export function renderSchedule() {
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 rounded-lg bg-surface-container-low">
                         <div class="flex flex-col">
-                            <span class="text-[10px] uppercase tracking-widest text-outline font-bold mb-1">Surgeon</span>
+                            <span class="text-[10px] uppercase tracking-widest text-outline font-bold mb-1">Cirurgião</span>
                             <span class="text-sm font-semibold text-on-surface">Dr. Ricardo Silva</span>
                         </div>
                         <div class="flex flex-col">
-                            <span class="text-[10px] uppercase tracking-widest text-outline font-bold mb-1">Anesthesiologist</span>
+                            <span class="text-[10px] uppercase tracking-widest text-outline font-bold mb-1">Anestesista</span>
                             <span class="text-sm font-semibold text-on-surface">Dr. Elena M.</span>
                         </div>
                         <div class="flex flex-col">
-                            <span class="text-[10px] uppercase tracking-widest text-outline font-bold mb-1">Nurse</span>
+                            <span class="text-[10px] uppercase tracking-widest text-outline font-bold mb-1">Enfermeiro(a)</span>
                             <span class="text-sm font-semibold text-on-surface">Ana Martins</span>
                         </div>
                     </div>
@@ -65,8 +65,8 @@ export function renderSchedule() {
                     <div class="flex flex-wrap justify-between items-start gap-4 mb-4">
                         <div>
                             <div class="flex items-center gap-2 mb-1">
-                                <span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container text-[10px] font-bold uppercase tracking-wider">In-patient</span>
-                                <span class="text-primary font-bold text-sm tracking-tight">OR 02</span>
+                                <span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container text-[10px] font-bold uppercase tracking-wider">Internamento</span>
+                                <span class="text-primary font-bold text-sm tracking-tight">SALA 02</span>
                             </div>
                             <h3 class="text-xl font-bold text-on-surface leading-tight">Artroscopia do Joelho</h3>
                         </div>
@@ -77,15 +77,15 @@ export function renderSchedule() {
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 rounded-lg bg-surface-container-low">
                         <div class="flex flex-col">
-                            <span class="text-[10px] uppercase tracking-widest text-outline font-bold mb-1">Surgeon</span>
+                            <span class="text-[10px] uppercase tracking-widest text-outline font-bold mb-1">Cirurgião</span>
                             <span class="text-sm font-semibold text-on-surface">Dr. Marcos V.</span>
                         </div>
                         <div class="flex flex-col">
-                            <span class="text-[10px] uppercase tracking-widest text-outline font-bold mb-1">Anesthesiologist</span>
+                            <span class="text-[10px] uppercase tracking-widest text-outline font-bold mb-1">Anestesista</span>
                             <span class="text-sm font-semibold text-on-surface">Dr. Carla Dias</span>
                         </div>
                         <div class="flex flex-col">
-                            <span class="text-[10px] uppercase tracking-widest text-outline font-bold mb-1">Nurse</span>
+                            <span class="text-[10px] uppercase tracking-widest text-outline font-bold mb-1">Enfermeiro(a)</span>
                             <span class="text-sm font-semibold text-on-surface">Paulo Santos</span>
                         </div>
                     </div>
@@ -99,7 +99,7 @@ export function renderSchedule() {
                 </div>
                 <div class="flex-1 flex items-center gap-4">
                     <hr class="flex-1 border-primary/20"/>
-                    <span class="text-[10px] font-black text-primary uppercase tracking-[0.2em] whitespace-nowrap">Current Time 14:15</span>
+                    <span class="text-[10px] font-black text-primary uppercase tracking-[0.2em] whitespace-nowrap">Hora Atual 14:15</span>
                     <hr class="flex-1 border-primary/20"/>
                 </div>
             </div>
